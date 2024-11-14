@@ -1,0 +1,358 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+.franchise {
+  background-color: #003A25;
+  color: #fff;
+  font-weight: bold;
+  width: 140px;
+  border-radius: 12px;
+}
+.profile {
+  border: 1.5px solid #003A25;
+  width: 140px;
+  border-radius: 12px;
+} 
+.profile:hover {
+  background-color: #003A25;
+  color: #fff;
+}
+.orderButton {
+  background-color: #315c45;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 0;
+  font-weight: 600;
+  box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.15);
+  width: 30%;
+}
+.orderButton:hover {
+  background-color: #003a26;
+}
+.navBar {
+  height: 73px;
+}
+.card {
+  min-width: 416px;
+  min-height: 468px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.card:hover{
+  box-shadow: 0px 0px 16px 2px rgba(123, 187, 67, 0.63);
+}
+.carouselParent {
+  max-width: 1280px;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+.cardImage {
+  width: 415px;
+  height: 265px;
+  border-radius: 8px 8px 0 0;
+}
+.icon {
+  position: relative;
+  top: -40px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+.leftArrow, .rightArrow {
+  scale: 2;
+  cursor: pointer;
+}
+.infoHeader {
+  background-color: #f4fcee;
+}
+h1 {
+  color: #003a25;
+}
+.processImage {
+  width: 75px;
+  height: 75px;
+}
+.middleSection, .leftSection, .rightSection {
+  width: calc(100%/3);
+  height: 370px;
+}
+.leftSection div:nth-child(1){
+  left: -110px;
+}
+.leftSection div:nth-child(2){
+  left: -60px;
+}
+.leftSection div:nth-child(3){
+  left: 0;
+}
+.leftSection div:nth-child(4){
+  left: -60px;
+}
+.leftSection div:nth-child(5){
+  left: -110px;
+}
+.rightSection div:nth-child(1){
+  left: 110px;
+}
+.rightSection div:nth-child(2){
+  left: 60px;
+}
+.rightSection div:nth-child(3){
+  left: 0;
+}
+.rightSection div:nth-child(4){
+  left: 60px;
+}
+.rightSection div:nth-child(5){
+  left: 110px;
+}
+.customerDetails {
+  background-color: #F1F5FF;
+  width: 50%;
+  min-height: 500px;
+  position: relative;
+  top: -250px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.footerContainer, .footerBottom {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.footerBottom {
+  border-top: 1px solid #ffffff2e;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+.footer {
+  background-color: #033d29;
+  color: #fff;
+  padding: 40px 0px  21px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 30px;
+}
+.footerHeader {
+  border-bottom:1px solid #ffffff2e;
+  padding-bottom: 15px;
+}
+.dot {
+  border: 1px solid #66a52e;
+  color: #66a52e;
+  padding: 4px 8px;
+  font-size: 20px;
+  width: fit-content;
+  border-radius: 50%;
+}
+.laundryElement {
+  box-shadow: 5px 6px 9px 0px rgba(0, 0, 0, 0.16);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.checkbox {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: auto 0;
+}
+.priceAndDelivery {
+  color: #7bbb43;
+  height: 30px;
+  font-size: 20px;
+}
+.price {
+  padding-right: 10px;
+  border-right: 2px solid #7bbb43;
+}
+.imageContainer {
+  background-image: url('https://assets.ucleanlaundry.com/all_service_icons_in_one_file.png');
+  height: 151px;
+  width: 151px;
+  background-repeat: no-repeat;
+  background-size: 450%;
+}
+.dryCleaning {
+  background-position: 53% 36%;
+}
+.premiumCleaning {
+  background-position: 8% 8%;
+}
+.laundryFold {
+  background-position: 8% 35%;
+}
+.laundryIron {
+  background-position: 75% 100%;
+}
+.steamPress {
+  background-position: 30% 100%;
+}
+.button {
+  color: #fff;
+  margin: 0 auto;
+  border: 1px solid #7bbb43;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  width: 16%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 30px;
+}
+.backHome {
+  width: 50%;
+  margin: auto;
+}
+.backButton {
+  color: #7bbb43;
+  background-color: #fff;
+}
+.backButton:hover {
+  background-color: #b5cc51;
+  color: #fff;
+  border-color: #b5cc51;
+
+}
+.nextButton {
+  background-color: #7bbb43;
+  color: #fff;
+}
+.navigateButtons {
+  text-align: center;
+}
+.number {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+.dates {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.date {
+  border: 1px solid #7bbb43;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.date:hover {
+  background-color: #7bbb43;
+  color: #fff;
+}
+.selected, .timeSlotHeading {
+  background-color: #7bbb43;
+  color: #fff;
+}
+.timeSlotsContainer {
+  max-width: 600px;
+  box-shadow: 1px 0px 29px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.timeSlots {
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+}
+.timeSlotHeading {
+  border-radius: 5px 5px 0 0;
+}
+.slot {
+  padding: 14px;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  margin:10px 40px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+.slot:hover {
+  background-color: #7bbb43;
+  color: #fff;
+}
+.addAdress {
+  flex: 1;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+}
+.serviceInput {
+  flex: 1;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.addPiece {
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 15px;
+  max-width: 50%;
+  height: 30px;
+  border-radius: 5px;
+}
+.addressContainer, .totalCost {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.address {
+  background-color: #f4fcee;
+  border: 1px solid #65BA0D;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+}
+.addAddress {
+  margin-right: 0;
+}
+.checkAddress {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.orderSummery {
+  box-shadow: 1px 0px 17px #00000015;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.errorData {
+  color: #a94442;
+  background-color: #f2dede;
+  border-radius: 5px;
+  margin: 15px auto;
+  text-align: center;
+  padding: 15px;
+  max-width: 1200px;
+}
+.headerBorder{
+  border-bottom:1px solid #66a52e;
+}
+.confirmedScreen {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50px;
+  min-width: 400px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
